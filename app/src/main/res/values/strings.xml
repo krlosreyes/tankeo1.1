@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">tankeo1.1</string>
+    <string name="logotipo">logotipo</string>
+    <string name="title_activity_principal">principal</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="epayco_public_key">d05da465837496ed68ec321f48af1d9b</string>
+    <string name="epayco_private_key">883a67e036e959eea8378affd951780a</string>
+
+    <string name="invoice">Factura Test</string>
+    <string name="description">Descripcion de la factura</string>
+    <string name="value">30000</string>
+    <string name="country">CO</string>
+    <string name="city">City</string>
+    <string name="iva">0</string>
+    <string name="currency">COP</string>
+    <string name="tu_saldo_actual">Tu saldo actual</string>
+</resources>

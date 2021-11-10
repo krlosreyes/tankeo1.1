@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".RecargaFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="514dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/bordexterno"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/nomUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:background="@color/black"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Nombre Usuario"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:elevation="4dp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:elevation="4dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginTop="12dp"
+                            android:elevation="4dp"
+                            android:text="@string/tu_saldo_actual"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <TextView
+                        android:id="@+id/saldoRecarga"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="0dp"
+                        android:elevation="4dp"
+                        android:text=" $............"
+                        android:textColor="@color/green_light"
+                        android:textSize="40sp"
+                        android:textStyle="bold" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="3dp"
+                    android:elevation="4dp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:elevation="4dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/recargaTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="0dp"
+                            android:background="@color/teal_700"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="Recarga en linea"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginTop="10dp"
+                            android:elevation="4dp"
+                            android:text="Valor de la recarga"
+                            android:textStyle="bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/linearLayoutCompat"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:elevation="4dp">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btn20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:elevation="4dp"
+                                android:text="$20.000"
+                                app:layout_constraintBaseline_toBaselineOf="@+id/btn50"
+                                app:layout_constraintEnd_toStartOf="@+id/btn50"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btn50"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:elevation="4dp"
+                                android:text="$50.000"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/btn100"
+                                app:layout_constraintStart_toEndOf="@+id/btn20"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btn100"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:elevation="4dp"
+                                android:text="$100.000"
+                                app:layout_constraintBaseline_toBaselineOf="@+id/btn50"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toEndOf="@+id/btn50" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtOtroVal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Otro valor"
+                        android:inputType="numberSigned"
+                        android:minHeight="48dp"
+                        android:textAlignment="center" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnRecarga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:elevation="4dp"
+                        android:text="Recargar" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp">
+
+                    <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+                        android:id="@+id/carousel"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        app:carouselGravity="CENTER"
+                        app:showNavigationButtons="false"
+                        app:autoPlay="true"
+                        app:autoPlayDelay="2000"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
